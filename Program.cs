@@ -4,7 +4,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
 
-app.UseHttpsRedirection();
+// HTTPS и перенаправление с http на https делает прокси платформы
 
 app.MapGet("/", () =>
 {
